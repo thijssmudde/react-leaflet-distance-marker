@@ -22,6 +22,11 @@ export default class DistanceMarkers extends Polyline {
     this.polyline.removeFrom(map) // Resets
     this.createLeafletElement(toProps) // To redraw Distance Markers
   }
+
+  addDistanceMarkers = () => {
+    console.log('addDistanceMarkers')
+    this.polyline.addDistanceMarkers()
+  }
 }
 
 import PropTypes from 'prop-types'
