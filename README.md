@@ -2,11 +2,11 @@
 
 Plugin for React-Leaflet to display markers along a route at equivalent distances.
 
-Thanks to https://github.com/adoroszlai on which this extension is heavily based.
+Thanks to https://github.com/adoroszlai. This react plugin is 100% based on his work.
 
 ## Example
 
-[demo](http://myroutes.io/)
+[Demo MyRoutes.io](http://myroutes.io/)
 
 ## Installation
 
@@ -51,11 +51,11 @@ If you want to edit the visibility you have two options.
 2. Programatically call addDistanceMarkers or removeDistanceMarkers
 
 ```javascript
-  Meteor.setTimeout(() => {
-    this.distancemarkers.addDistanceMarkers()
-  }, 2000)
+// In some function that you call later
+this.distancemarkers.addDistanceMarkers()
 
-  <DistanceMarkers {...otherProps} ref={(ref) => this.distancemarkers = ref}/>
+// Create the reference
+<DistanceMarkers {...otherProps} ref={(ref) => this.distancemarkers = ref}/>
 ```
 
 ## Dependencies
