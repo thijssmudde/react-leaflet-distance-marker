@@ -44,11 +44,11 @@ const distanceMarkers = {
  * **cssClass**: CSS class to set on marker icons
  * **iconSize**: size of the marker icon in pixels; type: [L.Point](http://leafletjs.com/reference.html#point) or array (default: `[12, 12]`); set to `null` to allow sizing via CSS class (see example on `icon-size` branch)
 
-## Using lazy
+## Programatically adding and removing distance markers
 
 If you want to edit the visibility you have two options.
-1. Provide an hidden cssClass 'dist-marker-hidden'
-2. Set lazy to true and call it like this:
+1. Provide an hidden cssClass 'dist-marker-hidden' that you control yourself
+2. Programatically call addDistanceMarkers or removeDistanceMarkers
 
 ```javascript
   Meteor.setTimeout(() => {
@@ -60,6 +60,8 @@ If you want to edit the visibility you have two options.
 
 ## Dependencies
 
- * [Leaflet.GeometryUtil](https://github.com/makinacorpus/Leaflet.GeometryUtil)
+* [React-Leaflet](https://github.com/PaulLeCam/react-leaflet)
+* [Leaflet](https://github.com/Leaflet/Leaflet)
+* [Leaflet.GeometryUtil](https://github.com/makinacorpus/Leaflet.GeometryUtil)
 
 This should be installed automagically

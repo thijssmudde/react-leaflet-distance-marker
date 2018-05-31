@@ -13,6 +13,7 @@ export default class DistanceMarkers extends Polyline {
     this.polyline = new L.Polyline(positions, {
      ...otherProps
     }).addTo(map)
+    
     return this.polyline
   }
 
@@ -24,8 +25,11 @@ export default class DistanceMarkers extends Polyline {
   }
 
   addDistanceMarkers = () => {
-    console.log('addDistanceMarkers')
     this.polyline.addDistanceMarkers()
+  }
+
+  removeDistanceMarkers = () => {
+    this.polyline.removeDistanceMarkers()
   }
 }
 
