@@ -1,6 +1,7 @@
 {
   "name": "react-leaflet-distance-marker",
-  "version": "0.0.3",
+  "version": "0.0.4",
+  "main": "DistanceMarker.js",
   "lockfileVersion": 1,
   "requires": true,
   "dependencies": {
