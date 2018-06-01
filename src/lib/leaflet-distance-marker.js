@@ -1,3 +1,7 @@
+import L from 'leaflet'
+import _ from 'lodash'
+import 'leaflet-geometryutil'
+
 L.DistanceMarkers = L
   .LayerGroup
   .extend({
