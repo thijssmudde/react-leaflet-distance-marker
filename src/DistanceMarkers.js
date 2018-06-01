@@ -1,8 +1,8 @@
 import L from 'leaflet'
 import {Polyline} from 'react-leaflet'
 
-import './lib/leaflet-distance-marker.js'
-import './lib/leaflet-distance-marker.css'
+import '../lib/leaflet-distance-marker.js'
+import '../lib/leaflet-distance-marker.css'
 
 // Converts the leaflet-distance-marker to React Component
 export default class DistanceMarkers extends Polyline {
@@ -38,3 +38,6 @@ import PropTypes from 'prop-types'
 DistanceMarkers.propTypes = {
   positions: PropTypes.array
 }
+
+exports['default'] = DistanceMarkers
+module.exports = exports['default']
